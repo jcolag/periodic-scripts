@@ -1,0 +1,37 @@
+{
+  "airNow": "",
+  "birthday": "",
+  "blogInfo": {
+    "posts": "",
+    "title": ""
+  },
+  "calendar": {
+    "database": "calendar-data/local.sqlite"
+  },
+  "github": {
+    "date": "%5BY%20%5DM%20j",
+    "theme": "solarized-light",
+    "user": ""
+  },
+  "journal": {
+    "days": 91,
+    "location": ""
+  },
+  "notes": {
+    "file": ""
+  },
+  "rss": [
+  ],
+  "sleep": {
+    "days": 91,
+    "length": "",
+    "reaction": ""
+  },
+  "weather": {
+    "apiKey": "",
+    "area": "",
+    "hours": 25,
+    "lat": 0,
+    "lon": 0
+  }
+}

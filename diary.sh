@@ -8,7 +8,7 @@ tempfile=$(mktemp --suffix=.txt)
 echo "Time to go!" > "$tempfile"
 editor=$(mimetype -b "$tempfile" | xargs xdg-mime query default | xargs whereis -b | cut -f2 -d':')
 
-if [ -z $editor ]
+if [ -z "$editor" ]
 then
   editorkey=$(mimetype -b "$tempfile" | xargs xdg-mime query default)
   editor=$(grep 'Exec=' "/usr/share/applications/${editorkey}" | head -1 | cut -f2 -d'=' | cut -f1 -d' ' | xargs which)
@@ -19,7 +19,7 @@ How was today?  😦😐😊
 
 HERE
 
-if [ $weekday -eq 0 ]
+if [ "$weekday" -eq 0 ]
 then
   cat >> "$journal" <<HERE
 Identify three (3) people in your life---past or present---to be grateful to.  Be sure to include the reason.
@@ -29,7 +29,7 @@ Identify three (3) people in your life---past or present---to be grateful to.  B
 3.  
 
 HERE
-elif [ $weekday -eq 1 ]
+elif [ "$weekday" -eq 1 ]
 then
   cat >> "$journal" <<HERE
 Here's part-one of the weekly wellbeing check-in from <mhfaengland.org>.
@@ -43,7 +43,7 @@ Here's part-one of the weekly wellbeing check-in from <mhfaengland.org>.
 * Is there anything I can improve?
 
 HERE
-elif [ $weekday -eq 2 ]
+elif [ "$weekday" -eq 2 ]
 then
   cat >> "$journal" <<HERE
 Here's part-two of the weekly wellbeing check-in from <mhfaengland.org>.
@@ -55,13 +55,13 @@ Here's part-two of the weekly wellbeing check-in from <mhfaengland.org>.
 * Are they working?
 
 HERE
-elif [ $weekday -eq 4 ]
+elif [ "$weekday" -eq 4 ]
 then
   cat >> "$journal" <<HERE
 Identify a happy memory of the week:  
 
 HERE
-elif [ $weekday -eq 5 ]
+elif [ "$weekday" -eq 5 ]
 then
   cat >> "$journal" <<HERE
 Identify something that you are looking forward to:  

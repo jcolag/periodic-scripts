@@ -7,10 +7,10 @@ redshift=$(pgrep --exact redshift)
 
 if [ "$#" -ge 1 ]
 then
-  theme='solarized-dark'
+  theme='pop-dark'
   nlight=true
-  scheme=prefer-dark
   pop=Pop-dark
+  scheme=prefer-dark
 fi
 
 # Note that you probably either want Night-light set here OR Redshift toggled
@@ -22,6 +22,7 @@ gsettings set org.gnome.desktop.interface color-scheme "${scheme}"
 sleep 5
 gsettings set org.gnome.desktop.interface gtk-theme "${pop}"
 sleep 5
+# Note that you probably won't need this on all systems.
 gnome-control-center &
 sleep 10
 pkill --exact gnome-control-c

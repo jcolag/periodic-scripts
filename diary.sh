@@ -1,4 +1,9 @@
 #!/bin/sh
+
+# SPDX-FileCopyrightText: 2023 John Colagioia <john@colagioia.net>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 path=$(jq -r .journal.location config.json)
 weekday=$(date +%w)
 journal="${path}$(date +%Y-%m-%d).md"

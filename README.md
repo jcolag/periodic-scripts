@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 John Colagioia <john@colagioia.net>
+
+SPDX-License-Identifier: AGPL-3.0-or-later
+-->
+
 # Periodic Scripts
 
 An archive of daily (or similar) scripts that John uses to maintain processes.

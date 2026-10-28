@@ -1,4 +1,9 @@
 #!/bin/sh
+
+# SPDX-FileCopyrightText: 2023 John Colagioia <john@colagioia.net>
+#
+# SPDX-License-Identifier: AGPL-3.0-or-later
+
 theme='solarized-light'
 nlight=false
 scheme=prefer-light
